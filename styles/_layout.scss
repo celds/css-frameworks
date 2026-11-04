@@ -1,0 +1,12 @@
+@use "sass:map";
+@use "variables";
+
+main {
+    min-height: 100vh;
+    background: map.get(variables.$colors, "background");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: map.get(variables.$fonts, "sans-serif");
+    color: map.get(variables.$colors, "text");
+}

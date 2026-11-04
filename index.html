@@ -1,14 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-    <h1>Hellooooooooooooooooooooo!</h1>
-    <p>it's working.</p>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Name | Welcome</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="text-center mb-4">
+            <h1>Name</h1>
+          </div>
 
+          <div class="card shadow-sm border-0 p-4">
+            <h2 class="text-center mb-4">Log in</h2>
+            <form action="/profile" method="GET">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  minlength="8"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Log in
+              </button>
+            </form>
+
+            <hr />
+
+            <p class="text-center mb-0">
+              Don't have an account?
+              <a href="#register" style="color: blue;">Create an account</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
