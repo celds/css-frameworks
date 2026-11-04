@@ -1,0 +1,19 @@
+@use "sass:map";
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
+.btn-custom {
+    background-color: map.get(variables.$colors, "primary-color");
+    color: #ffffff;
+    border: none;
+
+    @include mixins.button-style(10px 20px, 8px);
+
+    &:hover {
+        background-color: color.adjust(
+            map.get(variables.$colors, "primary-color"),
+            $lightness: -10%
+        );
+    }
+}

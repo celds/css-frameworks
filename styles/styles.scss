@@ -1,13 +1,16 @@
 @use "variables";
 @use "sass:map";
 @use "layout";
+@use "cards";
+
 @import "../node_modules/bootstrap/scss/functions";
-$primary: map.get(variables.$colors, "primary");
+$primary: map.get(variables.$colors, "primary-color");
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/variables-dark";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
+
 h1 {
-    color: map.get(variables.$colors, "primary");
+    color: map.get(variables.$colors, "primary-color"); 
 }
