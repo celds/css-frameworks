@@ -22,13 +22,13 @@
       <div class="mb-4">
         <label for="sort-posts" class="form-label">Sort posts</label>
         <select class="form-select" id="sort-posts">
-            <option value="newest">Newest first</option>
-            <option value="oldest">Oldest first</option>
-            <option value="popular">Most popular</option>
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="popular">Most popular</option>
         </select>
       </div>
 
-      <div class="card custom-card">
+      <div class="card custom-card create-custom-card">
         <h2 class="h5 mb-3">Create a post</h2>
 
         <form>
@@ -55,6 +55,71 @@
 
           <button type="submit" class="btn btn-primary">Publish post</button>
         </form>
+      </div>
+
+      <h2 class="h4 mt-5 mb-3">Recent posts</h2>
+      <div class="card custom-card post-card">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="../images/pfp1.png"
+              alt="tower"
+              class="rounded-circle me-2"
+              width="45"
+              height="45"
+            />
+
+            <div>
+              <h3 class="h6 mb-0">Bob Cheese</h3>
+              <small class="text-muted">1 hour ago</small>
+            </div>
+          </div>
+
+          <p>Captured this bobcat on my camera</p>
+
+          <img
+            src="../images/post2.png"
+            alt="Bobcat"
+            class="img-fluid rounded mb-3 post-image"
+          />
+
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-primary">like</button>
+            <button type="button" class="btn btn-outline-secondary">comment</button>
+          </div>
+        </div>
+        </div>
+
+        <div class="card custom-card post-card">
+        <div class="card-body">
+          <div class="d-flex align-items-center mb-3">
+            <img
+              src="../images/pfp2.png"
+              alt="name of the image"
+              class="rounded-circle me-2"
+              width="45"
+              height="45"
+            />
+
+            <div>
+              <h3 class="h6 mb-0">Lexi Sim</h3>
+              <small class="text-muted">32 minutes ago</small>
+            </div>
+          </div>
+
+          <p>Autumn trees</p>
+
+          <img
+            src="../images/post1.jpg"
+            alt="autumn trees"
+            class="img-fluid rounded mb-3 post-image"
+          />
+
+          <div class="d-flex gap-2">
+            <button type="button" class="btn btn-outline-primary">like</button>
+            <button type="button" class="btn btn-outline-secondary">comment</button>
+          </div>
+        </div>
       </div>
     </main>
   </body>
