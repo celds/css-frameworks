@@ -46,121 +46,133 @@
       </nav>
     </header>
 
-    <main class="container">
-      <h1>Feed</h1>
-      <div class="mb-4">
-        <label for="search" class="form-label">Search posts</label>
-        <input
-          type="search"
-          class="form-control"
-          id="search"
-          placeholder="search for posts"
-        />
-      </div>
-
-      <div class="mb-4">
-        <label for="sort-posts" class="form-label">Sort posts</label>
-        <select class="form-select" id="sort-posts">
-          <option value="newest">Newest first</option>
-          <option value="oldest">Oldest first</option>
-          <option value="popular">Most popular</option>
-        </select>
-      </div>
-
-      <div class="card custom-card create-custom-card">
-        <h2 class="h5 mb-3">Create a post</h2>
-
-        <form>
-          <div class="mb-3">
-            <label for="post-content" class="form-label">Post here</label>
-            <textarea
-              class="form-control"
-              id="post-content"
-              rows="3"
-              placeholder="write something"
-              required
-            ></textarea>
-          </div>
-
-          <div class="mb-3">
-            <label for="post-image" class="form-label">Add and Image</label>
+    <main class="container py-4">
+      <div class="feed-container">
+        <h1>Feed</h1>
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-8">
+            <label for="search" class="form-label">Search posts</label>
             <input
-              type="file"
+              type="search"
               class="form-control"
-              id="poost-image"
-              accept="image/*"
+              id="search"
+              placeholder="search for posts"
             />
           </div>
 
-          <button type="submit" class="btn btn-primary">Publish post</button>
-        </form>
-      </div>
-
-      <h2 class="h4 mt-5 mb-3">Recent posts</h2>
-      <div class="card custom-card post-card">
-        <div class="card-body">
-          <div class="d-flex align-items-center mb-3">
-            <img
-              src="../images/pfp1.png"
-              alt="tower"
-              class="rounded-circle me-2"
-              width="45"
-              height="45"
-            />
-
-            <div>
-              <h3 class="h6 mb-0">Bob Cheese</h3>
-              <small class="text-muted">1 hour ago</small>
-            </div>
-          </div>
-
-          <p>Captured this bobcat on my camera</p>
-
-          <img
-            src="../images/post2.png"
-            alt="Bobcat"
-            class="img-fluid rounded mb-3 post-image"
-          />
-
-          <div class="d-flex gap-2">
-            <button type="button" class="btn btn-outline-primary">like</button>
-            <button type="button" class="btn btn-outline-secondary">
-              comment
-            </button>
+          <div class="col-12 col-md-4">
+            <label for="sort-posts" class="form-label">Sort posts</label>
+            <select class="form-select" id="sort-posts">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="popular">Most popular</option>
+            </select>
           </div>
         </div>
-      </div>
 
-      <div class="card custom-card post-card">
-        <div class="card-body">
-          <div class="d-flex align-items-center mb-3">
+        <div class="card custom-card create-post-card">
+          <div class="card-body">
+            <h2 class="h5 mb-3">Create a post</h2>
+
+            <form>
+              <div class="mb-3">
+                <label for="post-content" class="form-label">Post here</label>
+                <textarea
+                  class="form-control"
+                  id="post-content"
+                  rows="3"
+                  placeholder="write something"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="post-image" class="form-label">Add an Image</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="post-image"
+                  accept="image/*"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Publish post
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <h2 class="h4 mt-5 mb-3">Recent posts</h2>
+        <div class="card custom-card post-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/pfp1.png"
+                alt="Bob's profile picture"
+                class="rounded-circle me-2"
+                width="45"
+                height="45"
+              />
+
+              <div>
+                <h3 class="h6 mb-0">Bob Cheese</h3>
+                <small class="text-muted">1 hour ago</small>
+              </div>
+            </div>
+
+            <p>Captured this bobcat on my camera</p>
+
             <img
-              src="../images/pfp2.png"
-              alt="name of the image"
-              class="rounded-circle me-2"
-              width="45"
-              height="45"
+              src="../images/post2.png"
+              alt="Bobcat"
+              class="img-fluid rounded mb-3 post-image"
             />
 
-            <div>
-              <h3 class="h6 mb-0">Lexi Sim</h3>
-              <small class="text-muted">32 minutes ago</small>
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-outline-primary">
+                like
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                comment
+              </button>
             </div>
           </div>
+        </div>
 
-          <p>Autumn trees</p>
+        <div class="card custom-card post-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/pfp2.png"
+                alt="Lexi's profile picture"
+                class="rounded-circle me-2"
+                width="45"
+                height="45"
+              />
 
-          <img
-            src="../images/post1.jpg"
-            alt="autumn trees"
-            class="img-fluid rounded mb-3 post-image"
-          />
+              <div>
+                <h3 class="h6 mb-0">Lexi Sim</h3>
+                <small class="text-muted">32 minutes ago</small>
+              </div>
+            </div>
 
-          <div class="d-flex gap-2">
-            <button type="button" class="btn btn-outline-primary">like</button>
-            <button type="button" class="btn btn-outline-secondary">
-              comment
-            </button>
+            <p>Autumn trees</p>
+
+            <img
+              src="../images/post1.jpg"
+              alt="autumn trees"
+              class="img-fluid rounded mb-3 post-image"
+            />
+
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-outline-primary">
+                Like
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                Comment
+              </button>
+            </div>
           </div>
         </div>
       </div>

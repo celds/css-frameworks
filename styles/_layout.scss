@@ -1,9 +1,25 @@
 @use "sass:map";
 @use "variables";
 
+body {
+  font-size: map.get(variables.$font-sizes, "body");
+}
+
 main {
-    min-height: 100vh;
-    background: map.get(variables.$colors, "background-color");
-    font-family: map.get(variables.$fonts, "sans-serif");
-    color: map.get(variables.$colors, "text-color");
+  min-height: 100vh;
+  background: map.get(variables.$colors, "background-color");
+  font-family: map.get(variables.$fonts, "sans-serif");
+  color: map.get(variables.$colors, "text-color");
+}
+
+.feed.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: map.get(variables.$font-sizes, "heading");
+}
+h2 {
+  font-size: map.get(variables.$font-sizes, "subheading");
 }
