@@ -9,8 +9,6 @@ $primary: map.get(variables.$colors, "primary-color");
 @import "../node_modules/bootstrap/scss/variables-dark";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
-
 h1 {
-    color: map.get(variables.$colors, "primary-color"); 
+  color: map.get(variables.$colors, "primary-color");
 }

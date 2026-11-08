@@ -5,18 +5,15 @@ const showRegister = document.querySelector("#show-register");
 const showLogin = document.querySelector("#show-login");
 
 showRegister.addEventListener("click", function (event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    loginForm.hidden = true;
-    registerForm.hidden = false;
+  loginForm.hidden = true;
+  registerForm.hidden = false;
 });
 
 showLogin.addEventListener("click", function (event) {
-    event.preventDefault();
+  event.preventDefault();
 
-    registerForm.hidden = true;
-    loginForm.hidden = false;
+  registerForm.hidden = true;
+  loginForm.hidden = false;
 });
-
-
-

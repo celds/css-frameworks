@@ -12,7 +12,7 @@ main {
   color: map.get(variables.$colors, "text-color");
 }
 
-.feed.container {
+.feed-container {
   max-width: 750px;
   margin: 0 auto;
 }

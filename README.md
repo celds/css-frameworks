@@ -51,4 +51,4 @@ open an index.html file and open it with a live server with the live server exte
 
 ## Author
 
-celds/celine
+Celds/Celine.
