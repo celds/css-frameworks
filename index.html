@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samigram | Welcome</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-dark" style="background-color: #dc3545">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="../index.html"> Samigram </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="row justify-content-center align-items-center min-vh-100">
+        <div class="col-12 col-md-8 col-lg-5">
+          <div class="text-center mb-4">
+            <h1>Samigram</h1>
+          </div>
+
+          <div class="card custom-card" id="login-form">
+            <div class="card-body">
+              <h2 class="text-center mb-4">Log in</h2>
+              <form action="/profile" method="GET">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    minlength="8"
+                    required
+                  />
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                  Log in
+                </button>
+              </form>
+
+              <hr />
+
+              <p class="text-center mb-0">
+                Don't have an account?
+                <a href="#" id="show-register" style="color: blue"
+                  >Create an account</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="card custom-card" id="register-form" hidden>
+            <h2 class="text-center mb-4">Create an account</h2>
+
+            <form action="/profile" method="GET">
+              <div class="mb-3">
+                <label for="register-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="register-email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="register-password" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="register-password"
+                  name="password"
+                  placeholder="Create a password"
+                  minlength="8"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">
+                Register
+              </button>
+            </form>
+
+            <p class="text-center mt-3 mb-0">
+              Already have an account?
+              <a href="#" id="show-login" style="color: blue">Log in</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-primary text-white text-center py-4 mt-auto">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <h4 class="fw-bold">Samigram</h4>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h5>Information</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Terms Of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h5>Contact us</h5>
+            <p class="mb-1">Questions or feedback?</p>
+            <a href="mailto:contact@samigram.com" class="text-white"
+              >Contact@samigram.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

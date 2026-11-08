@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Samigram | Feed</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="min-vh-100 d-flex flex-column">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        style="background-color: #dc3545"
+      >
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="../index.html"> Samigram </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Feed
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="../profile/index.html">Profile </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container py-4 flex-grow-1">
+      <div class="feed-container">
+        <h1>Feed</h1>
+        <div class="row g-3 mb-4">
+          <div class="col-12 col-md-8">
+            <label for="search" class="form-label">Search posts</label>
+            <input
+              type="search"
+              class="form-control"
+              id="search"
+              placeholder="search for posts"
+            />
+          </div>
+
+          <div class="col-12 col-md-4">
+            <label for="sort-posts" class="form-label">Sort posts</label>
+            <select class="form-select" id="sort-posts">
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+              <option value="popular">Most popular</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card custom-card create-post-card">
+          <div class="card-body">
+            <h2 class="h5 mb-3">Create a post</h2>
+
+            <form>
+              <div class="mb-3">
+                <label for="post-content" class="form-label">Post here</label>
+                <textarea
+                  class="form-control"
+                  id="post-content"
+                  rows="3"
+                  placeholder="write something"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="mb-3">
+                <label for="post-image" class="form-label">Add an Image</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="post-image"
+                  accept="image/*"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Publish post
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <h2 class="h4 mt-5 mb-3">Recent posts</h2>
+        <div class="card custom-card post-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/pfp1.png"
+                alt="Bob's profile picture"
+                class="rounded-circle me-2"
+                width="45"
+                height="45"
+              />
+
+              <div>
+                <h3 class="h6 mb-0">Bob Cheese</h3>
+                <small class="text-muted">1 hour ago</small>
+              </div>
+            </div>
+
+            <p>Captured this bobcat on my camera</p>
+
+            <img
+              src="../images/post2.png"
+              alt="Bobcat"
+              class="img-fluid rounded mb-3 post-image"
+            />
+
+            <div class="d-flex gap-2">
+              <button
+                type="button"
+                class="btn btn-outline-primary like-button"
+                aria-pressed="false"
+              >
+                <span class="heart-icon" aria-hidden="true">♡</span>
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                comment
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card custom-card post-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-3">
+              <img
+                src="../images/pfp2.png"
+                alt="Lexi's profile picture"
+                class="rounded-circle me-2"
+                width="45"
+                height="45"
+              />
+
+              <div>
+                <h3 class="h6 mb-0">Lexi Sim</h3>
+                <small class="text-muted">32 minutes ago</small>
+              </div>
+            </div>
+
+            <p>Autumn trees</p>
+
+            <img
+              src="../images/post1.jpg"
+              alt="autumn trees"
+              class="img-fluid rounded mb-3 post-image"
+            />
+
+            <div class="d-flex gap-2">
+              <button type="button" class="btn btn-outline-primary">
+                <span class="heart-icon" aria-hidden="true">♡</span>
+              </button>
+
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                aria-pressed="false"
+              >
+                Comment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-primary text-white text-center py-4 mt-auto">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <h4 class="fw-bold">Samigram</h4>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h5>Information</h5>
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Terms Of Service</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <h5>Contact us</h5>
+            <p class="mb-1">Questions or feedback?</p>
+            <a href="mailto:contact@samigram.com" class="text-white"
+              >Contact@samigram.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

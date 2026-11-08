@@ -1,0 +1,32 @@
+@use "sass:map";
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
+.like-button {
+  .heart-icon {
+    font-size: 1.2rem;
+    margin-right: 4px;
+  }
+
+  &.liked {
+    color: #dc3545;
+    background-color: #ffffff;
+    border-color: #dc3545;
+  }
+}
+
+.btn-custom {
+  background-color: map.get(variables.$colors, "primary-color");
+  color: #ffffff;
+  border: none;
+
+  @include mixins.button-style(10px 20px, 8px);
+
+  &:hover {
+    background-color: color.adjust(
+      map.get(variables.$colors, "primary-color"),
+      $lightness: -10%
+    );
+  }
+}

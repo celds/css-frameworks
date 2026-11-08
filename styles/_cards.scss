@@ -1,0 +1,26 @@
+@use "sass:map";
+@use "variables";
+
+.card.custom-card {
+  background-color: #f4f4f4;
+  border: 1px solid #e3e3e3;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.create-post-card {
+  margin-bottom: 2rem;
+}
+
+.post-card {
+  margin-bottom: 1.5rem;
+
+  img.post-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+}
