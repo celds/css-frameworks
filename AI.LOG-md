@@ -1,0 +1,28 @@
+
+AI usage:
+
+Ai:chatgpt
+Date: 
+Purpose: brainstorming some UI ideas
+
+Outcome: I did receive answers, but I don’t remember if I actually used the colors it suggested or not, 
+I don’t think I did,  but I still asked it, so I’m writing it up here anyway. 
+
+
+AI: chatgpt 
+Date: 4.november 2026
+Purpose: Used to help me better understand mixin, and when and how to use it,
+ and also had me try it out with some simple stuff. 
+
+Outcome: I did try it out and helped me understand how it was used and when to use it,  
+but did not use it in my assignment, I used bootstrap classes, 
+since the project was small enough that I did not think mixins was necessary. 
+
+
+AI: chatgpt
+Date 4-7 november 2026
+Purpose: Used to fix structural problems and typos which vscode/prettier did not catch
+
+Outcome: fixed certain typos such as where I wrote mb instead of md and fixing 
+an element which was outside instead of inside another element, also forgetting to put an – in something, 
+example “text decoration-none” instead of “text-decoration-none”
