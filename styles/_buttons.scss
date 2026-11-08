@@ -3,32 +3,30 @@
 @use "variables";
 @use "mixins";
 
+.like-button {
+  .heart-icon {
+    font-size: 1.2rem;
+    margin-right: 4px;
+  }
 
-.like-button{
-    .heart-icon{
-        font-size: 1.2rem;
-        margin-right:4px;
-    }
-
-    &.liked {
-        color: #DC3545;
-        background-color: #ffffff;
-        border-color: #DC3545;
-    }
+  &.liked {
+    color: #dc3545;
+    background-color: #ffffff;
+    border-color: #dc3545;
+  }
 }
 
 .btn-custom {
+  background-color: map.get(variables.$colors, "primary-color");
+  color: #ffffff;
+  border: none;
 
-    background-color: map.get(variables.$colors, "primary-color");
-    color: #ffffff;
-    border: none;
+  @include mixins.button-style(10px 20px, 8px);
 
-    @include mixins.button-style(10px 20px, 8px);
-
-    &:hover {
-        background-color: color.adjust(
-            map.get(variables.$colors, "primary-color"),
-            $lightness: -10%
-        );
-    }
+  &:hover {
+    background-color: color.adjust(
+      map.get(variables.$colors, "primary-color"),
+      $lightness: -10%
+    );
+  }
 }
