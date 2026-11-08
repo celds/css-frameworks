@@ -3,7 +3,22 @@
 @use "variables";
 @use "mixins";
 
+
+.like-button{
+    .heart-icon{
+        font-size: 1.2rem;
+        margin-right:4px;
+    }
+
+    &.liked {
+        color: #DC3545;
+        background-color: #ffffff;
+        border-color: #DC3545;
+    }
+}
+
 .btn-custom {
+
     background-color: map.get(variables.$colors, "primary-color");
     color: #ffffff;
     border: none;

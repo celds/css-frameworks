@@ -134,8 +134,12 @@
             />
 
             <div class="d-flex gap-2">
-              <button type="button" class="btn btn-outline-primary">
-                like
+              <button
+                type="button"
+                class="btn btn-outline-primary like-button"
+                aria-pressed="false"
+              >
+                <span class="heart-icon" aria-hidden="true">♡</span>
               </button>
               <button type="button" class="btn btn-outline-secondary">
                 comment
@@ -171,9 +175,14 @@
 
             <div class="d-flex gap-2">
               <button type="button" class="btn btn-outline-primary">
-                Like
+              <span class="heart-icon" aria-hidden="true">♡</span>
               </button>
-              <button type="button" class="btn btn-outline-secondary">
+
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                aria-pressed="false"
+              >
                 Comment
               </button>
             </div>
